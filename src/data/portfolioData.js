@@ -49,7 +49,7 @@ export const portfolioData = {
       description:
         "AML plugin & interface SDK providing RakNet packet handling and RPC listening for SA-MP Mobile.",
       tech: ["C+"],
-      demoUrl: "https://demo-pos.vercel.app", // Contoh: Link web yang sudah online di Vercel
+      demoUrl: "https://demo-pos.vercel.app",
       githubUrl: "https://github.com/YosuaS2023/AML-SAMP",
       isPrivate: false,
     },
@@ -61,8 +61,8 @@ export const portfolioData = {
       description:
         "Aplikasi mobile pelaporan sekolah berbasis Expo React Native dengan backend Express.js & SQLite. Mendukung multi-role (Admin/Petugas/Murid) untuk membuat laporan berfoto, tracking status, dan manajemen akun.",
       tech: ["JavaScripts", "TypeScript"],
-      demoUrl: "https://demo-inventaris.vercel.app", // Bisa link video preview Loom/YouTube, atau web live
-      githubUrl: "https://github.com/YosuaS2023/clean-school", // Closed-code (Otomatis memunculkan badge "Closed code" & icon gembok)
+      demoUrl: "https://demo-inventaris.vercel.app",
+      githubUrl: "https://github.com/YosuaS2023/clean-school",
       isPrivate: false,
     },
     {
