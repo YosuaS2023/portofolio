@@ -52,12 +52,20 @@ export default function TopNav() {
     <header className="sticky top-0 z-50 bg-[#09090b]/90 backdrop-blur-md border-b border-zinc-800/80 transition-all">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16 gap-3">
-          {/* Left Brand: Avatar + Name */}
+          {/* Left Brand: Avatar (Foto / Inisial) + Name */}
           <a href="#home" className="flex items-center gap-2.5 flex-shrink-0 group">
             <div className="relative">
-              <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700/80 flex items-center justify-center text-xs font-bold font-mono text-zinc-100 group-hover:border-zinc-500 transition-colors">
-                {personal.nickname.slice(0, 2).toUpperCase()}
-              </div>
+              {personal.avatarUrl ? (
+                <img
+                  src={personal.avatarUrl}
+                  alt={personal.nickname}
+                  className="w-8 h-8 rounded-lg border border-zinc-700/80 object-cover group-hover:border-zinc-500 transition-colors"
+                />
+              ) : (
+                <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700/80 flex items-center justify-center text-xs font-bold font-mono text-zinc-100 group-hover:border-zinc-500 transition-colors">
+                  {personal.nickname.slice(0, 2).toUpperCase()}
+                </div>
+              )}
               <span className="absolute -bottom-0.5 -right-0.5 flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500 border border-zinc-950"></span>

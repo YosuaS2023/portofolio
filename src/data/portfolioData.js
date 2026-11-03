@@ -2,6 +2,7 @@ export const portfolioData = {
   personal: {
     nickname: "Steven",
     fullName: "STEVEN YOSUA WONGGOW",
+    avatarUrl: "https://github.com/YosuaS2023.png",
     role: "Software Engineer & Student",
     school: "SMK HANG TUAH 1 JAKARTA",
     location: "Indonesian",
@@ -49,7 +50,7 @@ export const portfolioData = {
       description:
         "AML plugin & interface SDK providing RakNet packet handling and RPC listening for SA-MP Mobile.",
       tech: ["C+"],
-      demoUrl: "https://demo-pos.vercel.app",
+      demoUrl: "",
       githubUrl: "https://github.com/YosuaS2023/AML-SAMP",
       isPrivate: false,
     },
@@ -61,7 +62,7 @@ export const portfolioData = {
       description:
         "Aplikasi mobile pelaporan sekolah berbasis Expo React Native dengan backend Express.js & SQLite. Mendukung multi-role (Admin/Petugas/Murid) untuk membuat laporan berfoto, tracking status, dan manajemen akun.",
       tech: ["JavaScripts", "TypeScript"],
-      demoUrl: "https://demo-inventaris.vercel.app",
+      demoUrl: "",
       githubUrl: "https://github.com/YosuaS2023/clean-school",
       isPrivate: false,
     },
@@ -80,15 +81,15 @@ export const portfolioData = {
   certificates: [
     {
       title: "Google AI",
-      issuer: "Couesera GCC",
+      issuer: "Coursera GCC",
       year: "2026",
       url: "https://coursera.org/share/b80a0a83f06a55975dc9b2c28feb8613",
     },
     {
-      title: "LKS ROBOTIK",
+      title: "LKS Machine Learning",
       issuer: "",
       year: "2026",
-      url: "https://www.dicoding.com",
+      url: "https://drive.google.com/file/d/12sjGZwEuFa98ptl4C6Rf9xWKF4rHjWLq/view",
     }
   ],
 };

@@ -19,9 +19,17 @@ export default function Hero() {
         {/* Left / Main Profile Area */}
         <div className="lg:col-span-7 space-y-6">
           <div className="flex items-center justify-between gap-4">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-xl sm:text-2xl font-bold font-mono text-zinc-100 shadow-md flex-shrink-0">
-              {personal.nickname.slice(0, 2).toUpperCase()}
-            </div>
+            {personal.avatarUrl ? (
+              <img
+                src={personal.avatarUrl}
+                alt={personal.nickname}
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border border-zinc-800 object-cover shadow-md flex-shrink-0"
+              />
+            ) : (
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-xl sm:text-2xl font-bold font-mono text-zinc-100 shadow-md flex-shrink-0">
+                {personal.nickname.slice(0, 2).toUpperCase()}
+              </div>
+            )}
 
             <div className="flex flex-col items-end gap-1.5">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-zinc-300 bg-zinc-900/90 border border-zinc-800">
